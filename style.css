@@ -403,8 +403,9 @@ button.simple {
   align-items: center;
   /* text-align: center; */
   flex-wrap: wrap;
-  background: rgb(239, 240, 240);
+  background: rgb(247, 235, 217);
   height: 10vh;
+  margin-bottom: 10px;
 }
 #newsletter h4 {
   font-size: 20px;
@@ -437,4 +438,24 @@ button.simple {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   height: 3.125rem;
+}
+#advantages-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgb(239, 240, 240);
+}
+#advantages-options .options-box {
+  width: 250px;
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 20px 20px 34px 20px rgba(0, 0, 0, 0.03);
+  /* border: 1px solid rgb(211, 208, 208); */
+  border-radius: 4px;
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
