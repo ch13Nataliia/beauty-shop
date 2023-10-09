@@ -52,13 +52,33 @@ button.normal {
   background: #b40024;
   border-radius: 5px;
   display: inline-block;
-  color: #fff;
+  color: #ebc0c0;
   padding: 14px;
   text-decoration: none;
   font-size: 14px;
   line-height: 15px;
-  font-family: gotham ssm medium a, gotham ssm medium b, Gotham, Helvetica,
-    Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid #e7e4e2;
+  min-width: 122px;
+  text-align: center;
+  height: 44px;
+  left: 440px;
+  top: 64px;
+  transition: 0.3s;
+}
+button.normal:hover {
+  background: #e0d4d7;
+  color: #000;
+}
+button.simple {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  color: #000;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15px;
   cursor: pointer;
   border: 1px solid #e7e4e2;
   min-width: 122px;
@@ -126,26 +146,27 @@ button.normal {
 
 /* Home Page */
 #hero {
-  background-image: url(/images/banner/banner-home-page.webp);
-  height: 40vh;
-  max-width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  background-image: url('/images/banner/banner-home-page.webp');
+  width: 100%;
+  height: 40vh;
   background-size: cover;
+  background-position: center;
 }
 #hero-banner {
   background: #fff;
-  width: 350px;
-  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  top: 30%;
-  right: 50%;
-  left: 40%;
-  position: absolute;
-  transform: translateX(150%) translateY(-50%);
+  padding: 20px;
   border-radius: 4px;
+  width: 30%;
+  transform: translateX(300px);
 }
 #hero-banner h4 {
   color: red;
@@ -272,4 +293,32 @@ button.normal {
   font-size: 15px;
   font-weight: 700;
   color: rgb(69, 108, 109);
+}
+#banner-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url('/images/banner/banner-home.webp');
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner-two h4 {
+  color: #b40024;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: 400;
+}
+#banner-two h2 {
+  font-size: 46px;
+  font-weight: 500;
+
+  color: rgb(69, 108, 109);
+}
+#banner-two p {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
