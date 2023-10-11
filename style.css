@@ -107,6 +107,7 @@ button.simple {
   align-items: center;
   justify-content: center;
 }
+
 #navbar li {
   list-style: none;
   padding: 0 20px;
@@ -133,7 +134,13 @@ button.simple {
   bottom: -4px;
   left: 20px;
 }
-
+#mobile {
+  align-items: center;
+  display: none;
+}
+#close{
+  display: none;
+}
 .logo a {
   text-decoration: none;
   font-size: 28px;
@@ -510,4 +517,49 @@ footer .col a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #ebd6c0;
+    box-shadow: 0, 0, 0, 0.1;
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    align-items: center;
+    display: flex;
+  }
+  #mobile i {
+    color: rgb(77, 90, 77);
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: rgb(77, 90, 77);
+    font-size: 24px;
+  }
+  #lg-bag{
+    display: none;
+  }
 }
