@@ -138,7 +138,7 @@ button.simple {
   align-items: center;
   display: none;
 }
-#close{
+#close {
   display: none;
 }
 .logo a {
@@ -521,6 +521,9 @@ footer .copyright {
 
 /* Media queries */
 @media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
@@ -559,7 +562,163 @@ footer .copyright {
     color: rgb(77, 90, 77);
     font-size: 24px;
   }
-  #lg-bag{
+  #lg-bag {
     display: none;
+  }
+  #hero {
+    height: 30vh;
+    padding: 0 80px;
+    background-position: top 30%;
+  }
+  #hero-banner {
+    width: 47%;
+    height: 200px;
+    transform: translateX(180px);
+  }
+  #hero-banner h4,
+  #hero-banner p {
+    padding: 4px;
+    font-size: 12px;
+  }
+  #hero-banner h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  button.normal {
+    padding: 8px;
+    font-size: 12px;
+    line-height: 10px;
+    min-width: 100px;
+    height: 44px;
+    left: 440px;
+    top: 64px;
+  }
+  #hero-options {
+    justify-content: center;
+  }
+  #hero-options .options-box {
+    width: 100%;
+    text-align: center;
+    margin: 15px 15px;
+  }
+  #hero-product-one .pro-container {
+    justify-content: center;
+  }
+  #hero-product-one .pro {
+    margin: 15px;
+    padding: 15px;
+  }
+  #banner-two {
+    height: 30vh;
+  }
+  #banner-two h4 {
+    font-size: 20px;
+  }
+  #banner-two h2 {
+    font-size: 36px;
+  }
+  #banner-two p {
+    font-size: 16px;
+  }
+  #bottom-banner .banner-box {
+    min-width: 100%;
+    height: 25vh;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  #banner-bottom-two {
+    padding: 0 40px;
+  }
+  #banner-bottom-two .banner-box {
+    width: 28%;
+    text-align: center;
+    align-items: center;
+  }
+  #banner-bottom-two .banner-box h2 {
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 150px;
+  }
+  #newsletter input,
+  #newsletter button {
+    height: 2.125rem;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
+  #newsletter p {
+    padding-bottom: 5px;
+  }
+  #advantages-options .options-box {
+    width: 180px;
+    padding: 20px 0px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  #navbar {
+    padding: 30px 10px;
+  }
+  #hero {
+    height: 25vh;
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #hero-banner {
+    display: none;
+  }
+  #hero-product-one .pro {
+    min-width: 150px;
+    padding: 10px 20px;
+    margin: 15px 0;
+  }
+  #hero-product-one .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+  #banner-two {
+    height: 25vh;
+  }
+  #banner-two h4 {
+    font-size: 15px;
+  }
+  #banner-two h2 {
+    font-size: 26px;
+  }
+  #bottom-banner span {
+    padding-bottom: 25px;
+  }
+  #bottom-banner .banner-box {
+    height: 35vh;
+    margin-bottom: 10px;
+  }
+  #banner-bottom-two {
+    padding: 0 20px;
+  }
+  #banner-bottom-two .banner-box {
+    width: 100%;
+  }
+  #banner-bottom-two .banner-box {
+    align-items: flex-start;
+  }
+  #banner-bottom-two .banner-box h2 {
+    margin-bottom: 100px;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  footer .copyright {
+    text-align: start;
   }
 }
