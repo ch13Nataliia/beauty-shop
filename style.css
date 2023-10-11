@@ -3,8 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
   font-size: 50px;
@@ -47,6 +47,7 @@ p {
 }
 body {
   width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button.normal {
   background: #b40024;
@@ -70,39 +71,25 @@ button.normal:hover {
   background: #e0d4d7;
   color: #000;
 }
-button.simple {
-  background: #fff;
-  border-radius: 5px;
-  display: inline-block;
-  color: #000;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 15px;
-  cursor: pointer;
-  border: 1px solid #e7e4e2;
-  min-width: 122px;
-  text-align: center;
-  height: 44px;
-  left: 440px;
-  top: 64px;
-}
-
 /* Header */
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 20px 80px;
-  background: rgb(244, 245, 245);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  background: lavenderblush;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
 }
-
+#header a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(69, 108, 109);
+}
 #navbar {
   display: flex;
   align-items: center;
@@ -142,15 +129,6 @@ button.simple {
 #close {
   display: none;
 }
-.logo a {
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: 700;
-  color: rgb(69, 108, 109);
-}
-.logo a:hover {
-  color: rgb(240, 157, 122);
-}
 
 /* Home Page */
 #hero {
@@ -161,7 +139,7 @@ button.simple {
   align-items: center;
   background-image: url('/images/banner/banner-home-page.webp');
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-size: cover;
   background-position: center;
 }
@@ -207,7 +185,7 @@ button.simple {
 #hero-product-one {
   text-align: center;
 }
-#hero-product-one h2 {
+/* #hero-product-one h2 {
   font-size: 50px;
   padding: 0;
   margin: 0;
@@ -231,7 +209,7 @@ button.simple {
   z-index: -1;
   left: calc(50% - 585px);
   top: 25px;
-}
+} */
 
 #hero-product-one h4 {
   color: rgb(69, 108, 109);
@@ -305,7 +283,6 @@ button.simple {
 }
 #bottom-banner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -313,13 +290,14 @@ button.simple {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   background-image: url('/images/banner/banner3.jpg');
-  min-width: 600px;
+  min-width: 580px;
   height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 30px;
+  margin-bottom: 10px;
 }
 #bottom-banner .banner-box-two {
   background-image: url('/images/banner/banner4.jpg');
@@ -499,20 +477,15 @@ footer .copyright {
   #hero-options .options-box {
     width: 280px;
   }
-  #bottom-banner .banner-box {
-    min-width: 550px;
-    height: 40vh;
-    padding: 20px;
-  }
   #advantages-options .options-box {
     width: 180px;
   }
 }
 @media (max-width: 1299px) {
   #bottom-banner .banner-box {
-    min-width: 500px;
-    height: 40vh;
-    padding: 20px;
+    min-width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
   }
 }
 
@@ -520,19 +493,14 @@ footer .copyright {
   #hero-product-one .pro {
     min-width: 200px;
   }
-  #bottom-banner {
-    flex-direction: column;
-  }
-  #bottom-banner .banner-box {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 10px;
-  }
   #advantages-options .options-box {
     width: 160px;
   }
 }
 @media (max-width: 1099px) {
+  body {
+    width: 100%;
+  }
   .section-p1 {
     padding: 40px 60px;
   }
@@ -546,14 +514,7 @@ footer .copyright {
     width: 100%;
     height: 45vh;
   }
-  #bottom-banner {
-    flex-direction: column;
-  }
-  #bottom-banner .banner-box {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 10px;
-  }
+
   #advantages-options .options-box {
     width: 200px;
   }
@@ -562,40 +523,71 @@ footer .copyright {
   .section-p1 {
     padding: 40px 40px;
   }
+  #header a {
+    font-size: 30px;
+  }
   #hero-options {
     flex-direction: column;
   }
   #hero-options .options-box {
     width: 100%;
   }
-  #bottom-banner {
-    flex-direction: column;
-  }
-  #bottom-banner .banner-box {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 799px) {
   .section-p1 {
-    padding: 40px 40px;
+    padding: 30px 30px;
   }
-  
-  #bottom-banner {
+  #navbar {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e6efeb;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
   }
-  #bottom-banner .banner-box {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 10px;
+  #navbar.active {
+    right: 0;
   }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #222;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #lg-bag {
+    display: none;
+  }
+
   #newsletter .form {
     width: 70%;
   }
 }
 @media (max-width: 718px) {
+  .section-p1 {
+    padding: 30px 30px;
+  }
   #hero-product-one .pro-container {
     flex-direction: column;
   }
@@ -605,14 +597,9 @@ footer .copyright {
 }
 @media (max-width: 650px) {
   .section-p1 {
-    padding: 40px 40px;
+    padding: 20px 20px;
   }
-  #bottom-banner .banner-box {
-    height: 40vh;
-  }
-  #banner-bottom-two {
-    flex-direction: column;
-  }
+
   #banner-bottom-two .banner-box {
     width: 100%;
     height: 40vh;
@@ -625,6 +612,7 @@ footer .copyright {
   #banner-bottom-two {
     padding: 0 20px;
   }
+
   #newsletter .form {
     width: 100%;
   }
@@ -637,16 +625,15 @@ footer .copyright {
     padding: 20px 20px;
   }
   #advantages-options {
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #advantages-options .options-box {
-width: 100%;
-
-}
-  /* #banner-bottom-two {
+    width: 100%;
+  }
+  #banner-bottom-two {
     justify-content: center;
     padding: 0 20px;
     align-items: center;
-  } */
+  }
 }
