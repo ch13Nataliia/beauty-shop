@@ -520,10 +520,105 @@ footer .copyright {
 }
 
 /* Media queries */
+@media (max-width: 1200px) {
+  .section-p1 {
+    padding: 40px 40px;
+}
+  #hero-options .options-box {
+  width: 280px;
+}
+#bottom-banner .banner-box {
+  display: flex;
+  align-items: center;
+  min-width: 500px;
+  height: 40vh;
+margin: 10px;
+}
+#advantages-options .options-box {
+  width: 180px;
+}
+}
+@media (max-width: 1100px) {
+  #hero-product-one .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+  #hero-product-one .pro {
+    width: 20%;
+    min-width: 180px;
+    padding: 10px 20px;
+}
+#bottom-banner .banner-box {
+  min-width: 100%;
+  height: 30vh;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+#advantages-options .options-box {
+  width: 250px;
+  padding: 20px 0px;
+  margin: 10px 0;
+}
+}
+
+@media (max-width: 950px) {
+  #hero-product-one .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+  #hero-product-one .pro {
+    width: 20%;
+    min-width: 180px;
+    padding: 10px 20px;
+}
+#bottom-banner .banner-box {
+  min-width: 100%;
+  height: 25vh;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+}
+@media(max-width: 850px){
+  #hero-banner {
+    width: 47%;
+    height: 200px;
+    transform: translateX(180px);
+  }
+  #hero-banner h4,
+  #hero-banner p {
+    padding: 4px;
+    font-size: 12px;
+  }
+  #hero-banner h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  #hero-product-one .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+  /* #hero-product-one .pro {
+    width: 40%;
+    min-width: 180px;
+    padding: 10px 20px;
+} */
+#hero-options .options-box {
+  width: 30%;
+}
+}
+
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
   }
+
   #navbar {
     display: flex;
     flex-direction: column;
