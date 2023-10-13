@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: black;
+  color: #898585;
 }
 h3 {
   font-size: 30px;
@@ -506,6 +506,98 @@ footer .copyright {
   font-size: 16px;
   font-weight: 600;
 }
+
+/* Single product Page  */
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+#prodetails .single-pro-img {
+  width: 40%;
+  margin-right: 15px;
+}
+.sm-img-gr {
+  display: flex;
+  justify-content: space-between;
+}
+.sm-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 20px;
+}
+#prodetails .single-pro-details h2,
+#prodetails .single-pro-details p,
+#prodetails .single-pro-details span {
+  color: #898585;
+  font-weight: 400;
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details .star {
+  color: gold;
+}
+.colors {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.colors img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#prodetails .single-pro-details h4 {
+  color: #1d1c1c;
+  font-weight: 600;
+  padding: 20px 0 20px 0;
+}
+
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 37px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+#more-details,
+#more-details .content h4 {
+  text-align: center;
+}
+#more-details .content {
+  text-align: left;
+  line-height: 2;
+  padding: 20px;
+}
+.collapsible {
+  background-color: #eee;
+  color: #868383;
+  cursor: pointer;
+  padding: 5px;
+  width: 120px;
+  border: none;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+}
+.content {
+  padding: 10 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.content p,
+.content h4 {
+  padding-bottom: 20px;
+}
+
 /* Media queries */
 
 @media (max-width: 1359px) {
@@ -556,7 +648,9 @@ footer .copyright {
   #advantages-options .options-box {
     width: 200px;
   }
+  /* Single Product Page */
 }
+
 @media (max-width: 886px) {
   .section-p1 {
     padding: 40px 40px;
