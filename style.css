@@ -667,6 +667,43 @@ footer .copyright {
   color: #ebc0c0;
 }
 
+/* treatments */
+#treatment-header{
+  background-image: url("/images/banner/spa-banner.webp");
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#treatment{
+  background-color: #eee;
+  display: flex;
+  
+}
+.treatment-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.treatment-box .treatment-img {
+  width: 50%;
+  margin-right: 20px;
+}
+.treatment-box img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.treatment-box .treatment-details {
+  width: 50%;
+}
+.treatment-box .treatment-details h2 {
+  font-size: 30px;
+  line-height: 1em;
+}
 /* Media queries */
 
 @media (max-width: 1359px) {
