@@ -598,6 +598,75 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
+/* SPA Page */
+#spa-header {
+  background-image: url('/images/banner/spa-banner-two.webp');
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dfd3d4;
+  width: 100%;
+  position: relative;
+}
+
+#spa-header .header-box {
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: -40px;
+  width: 442px;
+  border-radius: 8px;
+}
+#spa-header h3,
+#spa-header p {
+  color: #b40024;
+  padding: 10px;
+}
+.spa-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.spa-box .spa-img {
+  width: 50%;
+  margin-right: 40px;
+}
+#spa img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.spa-box {
+  padding: 20px;
+}
+.spa-box .spa-details {
+  width: 50%;
+}
+.spa-box .spa-details h4 {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.spa-box .spa-details p {
+  padding-bottom: 10px;
+}
+.spa-box .spa-details span {
+  color: #b40024;
+}
+.spa-box .spa-details a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b40024;
+  font-weight: 800;
+  transition: 0.3s;
+}
+.spa-box .spa-details a:hover {
+  color: #ebc0c0;
+}
+
 /* Media queries */
 
 @media (max-width: 1359px) {
@@ -734,6 +803,18 @@ footer .copyright {
   #newsletter .form {
     width: 70%;
   }
+  /* Spa page */
+  #spa-header .header-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -30px;
+    width: 342px;
+    border-radius: 8px;
+  }
 }
 @media (max-width: 718px) {
   .section-p1 {
@@ -752,6 +833,18 @@ footer .copyright {
     height: 20vh;
     margin-bottom: 5px;
   }
+  /* Spa page */
+  #spa-header .header-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -30px;
+    width: 342px;
+    border-radius: 8px;
+  }
 }
 @media (max-width: 650px) {
   .section-p1 {
@@ -767,6 +860,52 @@ footer .copyright {
   #newsletter {
     height: 20vh;
     margin-bottom: 5px;
+  }
+  /* Single Product */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* Spa page */
+  #spa-header .header-box {
+    padding: 10px 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -30px;
+    width: 342px;
+    border-radius: 8px;
+  }
+  #spa {
+    padding: 50px 10px 20px 10px;
+  }
+  .spa-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .spa-box .spa-details h2 {
+    font-size: 30px;
+  }
+  .spa-box .spa-details h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .spa-box .spa-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .spa-box .spa-details {
+    width: 100%;
   }
 }
 @media (max-width: 499px) {
@@ -791,6 +930,52 @@ footer .copyright {
   }
   #advantages-options .options-box {
     width: 180px;
+  }
+  /* Single Product */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* Spa page */
+  #spa-header .header-box {
+    padding: 10px 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -30px;
+    width: 342px;
+    border-radius: 8px;
+  }
+  #spa {
+    padding: 50px 10px 20px 10px;
+  }
+  .spa-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .spa-box .spa-details h2 {
+    font-size: 30px;
+  }
+  .spa-box .spa-details h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .spa-box .spa-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .spa-box .spa-details {
+    width: 100%;
   }
 }
 @media (max-width: 350px) {
@@ -825,5 +1010,55 @@ footer .copyright {
   #newsletter {
     height: 20vh;
     margin-bottom: 5px;
+  }
+  /* Single Product */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* Spa page */
+
+  #spa {
+    padding: 50px 10px 20px 10px;
+  }
+  #spa-header .header-box {
+    padding: 10px 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -30px;
+    width: 242px;
+    border-radius: 8px;
+  }
+  #spa {
+    padding: 50px 10px 20px 10px;
+  }
+  .spa-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .spa-box .spa-details h2 {
+    font-size: 30px;
+  }
+  .spa-box .spa-details h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .spa-box .spa-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .spa-box .spa-details {
+    width: 100%;
   }
 }
