@@ -741,6 +741,121 @@ footer .copyright {
   height: 100%;
   border-radius: 20px;
 }
+/* Contact Page */
+#contact-header-banner {
+  background-image: url('/images/banner/contact-banner.jpg');
+  width: 100%;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+#contact-header-banner h2 {
+  text-align: center;
+  color: #b40024;
+}
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+}
+#contact-details .details {
+  width: 40%;
+}
+#contact-details span,
+#form-details form span {
+  font-size: 12px;
+}
+#contact-details h3,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 15px;
+}
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details h4 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#form-details {
+  background: #eee;
+}
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+#form-details form h2 {
+  text-align: center;
+}
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+#form-details form button {
+  background: #ebc0c0;
+  color: #5e5a5a;
+  font-size: 17px;
+}
+#team {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+}
+.people {
+  background: #eee;
+}
+.people h2,
+.people h4,
+.team-box h3 {
+  text-align: center;
+  padding: 10px;
+
+  color: #5e5a5a;
+}
+.team-box {
+  padding: 10px;
+  margin: 10px;
+  width: 350px;
+  border-radius: 8px;
+}
+.team-box img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 /* Media queries */
 
