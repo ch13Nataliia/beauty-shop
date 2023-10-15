@@ -843,7 +843,6 @@ footer .copyright {
 .team-box h3 {
   text-align: center;
   padding: 10px;
-
   color: #5e5a5a;
 }
 .team-box {
@@ -925,6 +924,16 @@ footer .copyright {
 
   #spa-video .video {
     width: 100%;
+  }
+  /* CONTACT page */
+  .people h2 {
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  .people h4,
+  .team-box h3 {
+    font-size: 20px;
+    text-transform: lowercase;
   }
 }
 
@@ -1205,6 +1214,10 @@ footer .copyright {
     width: 100%;
     height: 250px;
   }
+  /* Contact Page */
+  #form-details form {
+    width: 85%;
+  }
 }
 @media (max-width: 499px) {
   .section-p1 {
@@ -1300,6 +1313,28 @@ footer .copyright {
   #spa-video .video {
     width: 100%;
     height: 250px;
+  }
+  /* Contact Page */
+  #contact-details {
+    flex-direction: column;
+  }
+  #contact-details .details,
+  #contact-details .map {
+    width: 100%;
+  }
+  #form-details form {
+    width: 85%;
+  }
+  .people h2 {
+    font-size: 26px;
+  }
+  .people h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #team {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 350px) {
