@@ -572,7 +572,27 @@ footer .copyright {
 .content h4 {
   padding-bottom: 20px;
 }
-
+/* JoliLipstuck page */
+#banner-two-lipstick {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+#banner-two-lipstick img {
+  width: 50%;
+}
+#banner-two-lipstick div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 /* SPA Page */
 #spa-header {
   background-image: url('/images/banner/spa-banner-two.webp');
