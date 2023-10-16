@@ -1274,6 +1274,14 @@ footer .copyright {
     width: 100%;
     padding-top: 20px;
   }
+  /* JoliLipstuck page */
+#banner-two-lipstick {
+flex-direction: column;
+margin: 10px;
+}
+#banner-two-lipstick img {
+  width: 50%;
+}
   /* Spa page */
   #spa-header .header-box {
     padding: 10px 20px;
