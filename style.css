@@ -874,6 +874,11 @@ footer .copyright {
   width: 100%;
   border-radius: 8px;
 }
+ /* Cart page */
+#cart h2 {
+  color: #898585;
+  text-align: center;
+}
 
 /* Media queries */
 
